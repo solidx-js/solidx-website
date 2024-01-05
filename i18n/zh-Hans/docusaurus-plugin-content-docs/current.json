@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.component": {
+    "message": "component",
+    "description": "The label for category component in sidebar tutorialSidebar"
+  },
+  "sidebar.component.category.component": {
+    "message": "component",
+    "description": "The label for category component in sidebar component"
+  }
+}
