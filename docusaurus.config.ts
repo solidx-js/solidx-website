@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'solidx.js',
   tagline: 'A New Way of 3D Programming',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo2.png',
 
   // Set the production url of your site here
   url: 'https://solidx.cloud',
@@ -42,7 +42,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/social.jpg',
     navbar: {
       title: 'solidx.js',
       logo: { alt: 'Logo', src: 'img/logo.png' },
