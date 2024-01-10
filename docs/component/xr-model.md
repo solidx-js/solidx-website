@@ -6,7 +6,13 @@
 模型文件必须是可被 babylon.js 识别的格式，否则无法被正确载入。截止目前，babylon.js 支持的模型格式有：glTF、OBJ。
 :::
 
-[![Edit DamagedHelmet](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/damagedhelmet-4cv2n3?file=%2Findex.html%3A9%2C10)
+## 示例
+
+### DamagedHelmet
+
+from: https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/DamagedHelmet
+
+<CodeSandboxLink url="https://codesandbox.io/embed/4cv2n3?view=preview&module=%2Findex.html" />
 
 ## 公共属性
 

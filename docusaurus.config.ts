@@ -51,7 +51,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'component',
           position: 'left',
-          label: '文档',
+          label: '组件',
         },
         {
           href: 'https://github.com/solidx-js/solidx.js',
