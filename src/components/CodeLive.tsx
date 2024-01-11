@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useMemo } from 'react';
+import React, { useLayoutEffect, useMemo, useState } from 'react';
 import CodeBlock from '@theme/CodeBlock';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { iframeResizer } from 'iframe-resizer';
@@ -9,15 +9,15 @@ export interface ICodeLiveProps {
   style?: React.CSSProperties;
   children: string;
 
-  height?: number;
+  defaultHeight?: number;
 }
 
-export const CodeLive = ({ className, style, children }: ICodeLiveProps) => {
+export const CodeLive = ({ className, style, children, defaultHeight }: ICodeLiveProps) => {
   const ref = React.useRef<HTMLIFrameElement>(null);
   const isBrowser = useIsBrowser();
 
   const assetURLs = {
-    iframeResizer: isBrowser ? window.location.origin + useBaseUrl('/iframeResizer.contentWindow.min.js') : '',
+    iframeResizer: (isBrowser ? window.location.origin : '') + useBaseUrl('/iframeResizer.contentWindow.min.js'),
   };
 
   // 去除首尾空行
@@ -31,7 +31,37 @@ export const CodeLive = ({ className, style, children }: ICodeLiveProps) => {
   <head>
     <style>
       html, body { margin: 0; padding: 0; }
+
+      .loading {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .loading::after {
+        content: '';
+        display: block;
+        width: 36px;
+        height: 36px;
+        border: 3px solid #096dd9;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        box-sizing: border-box;
+        animation: rotation-loading 1s linear infinite;
+      }
+      
+      @keyframes rotation-loading {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/solidx.js/assets/preset.css" />
   </head>
   <body>
     ${fragment}
@@ -49,26 +79,31 @@ export const CodeLive = ({ className, style, children }: ICodeLiveProps) => {
     if (!iframe) return;
 
     iframeResizer({ checkOrigin: false, autoResize: true }, iframe);
-  }, []);
+  }, [htmlBlobUrl]);
+
+  const renderIframe = () => {
+    return (
+      <iframe
+        ref={ref}
+        title='CodeLive'
+        src={htmlBlobUrl}
+        style={{
+          display: 'block',
+          width: '100%',
+          height: defaultHeight,
+          border: 'none',
+          overflow: 'hidden',
+          borderRadius: 4,
+          marginBottom: 8,
+        }}
+        onLoad={() => URL.revokeObjectURL(htmlBlobUrl)}
+      />
+    );
+  };
 
   return (
     <div data-name='CodeLive' className={className} style={{ ...style }}>
-      {htmlBlobUrl && (
-        <iframe
-          ref={ref}
-          title='CodeLive'
-          src={htmlBlobUrl}
-          style={{
-            display: 'block',
-            width: '100%',
-            height: 100,
-            border: 'none',
-            overflow: 'hidden',
-            borderRadius: 4,
-            marginBottom: 8,
-          }}
-        />
-      )}
+      {htmlBlobUrl && renderIframe()}
       <CodeBlock language='html' showLineNumbers children={fragment} />
     </div>
   );
