@@ -61,13 +61,13 @@ export const CodeLive = ({ className, style, children, defaultHeight }: ICodeLiv
         }
       }
     </style>
-    <link rel="stylesheet" href="https://unpkg.com/solidx.js/assets/preset.css" />
+    <link rel="stylesheet" href="https://registry.npmmirror.com/solidx.js/latest/files/assets/preset.css" />
   </head>
   <body>
     ${fragment}
 
     <script src="${assetURLs.iframeResizer}"></script>
-    <script src="https://unpkg.com/solidx.js/dist/index.js"></script>
+    <script src="https://registry.npmmirror.com/solidx.js/latest/files/dist/index.js"></script>
   </body>
 </html>`;
 
