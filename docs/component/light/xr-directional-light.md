@@ -4,7 +4,7 @@
 
 ## 示例
 
-<CodeLive defaultHeight={300}>
+<CodeLive>
 {`
 <style>
   xr-directional-light {
@@ -31,7 +31,7 @@
   }
 </style>
 
-<xr-scene env-intensity="0.05" background="#000" style="height: 300px;">
+<xr-scene env-intensity="0.05" background="#000">
   <xr-camera radius="3"></xr-camera>
   <xr-directional-light intensity="3" shadow-caster="xr-mesh"></xr-directional-light>
   <xr-mesh geometry="type: sphere" position="-1 0 0"></xr-mesh>

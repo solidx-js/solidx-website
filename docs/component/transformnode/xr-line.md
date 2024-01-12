@@ -6,7 +6,7 @@
 
 ### 任意线段
 
-<CodeLive defaultHeight={300}>
+<CodeLive>
 {`
 <style>
   xr-camera {
@@ -37,7 +37,7 @@
 
 ### 动态修改
 
-<CodeLive defaultHeight={300}>
+<CodeLive>
 {`
 <style>
   @property --line-y {

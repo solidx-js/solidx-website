@@ -31,7 +31,7 @@
 
 ### **type: box** 立方体
 
-<CodeLive defaultHeight={300}>
+<CodeLive>
 {`
 <style>
   xr-mesh {
@@ -59,7 +59,7 @@
   }
 </style>
 
-<xr-scene style="height: 300px;">
+<xr-scene>
   <xr-camera radius="3"></xr-camera>
   <xr-mesh></xr-mesh>
   <xr-mesh></xr-mesh>
@@ -86,7 +86,7 @@
 
 ### **type: sphere** 球体
 
-<CodeLive defaultHeight={300}>
+<CodeLive>
 {`
 <style>
   xr-mesh {
@@ -114,7 +114,7 @@
   }
 </style>
 
-<xr-scene style="height: 300px;">
+<xr-scene>
   <xr-camera radius="3" beta="80"></xr-camera>
   <xr-mesh></xr-mesh>
   <xr-mesh></xr-mesh>
@@ -137,7 +137,7 @@
 
 ### **type: cylinder** 圆柱体
 
-<CodeLive defaultHeight={300}>
+<CodeLive>
 {`
 <style>
   xr-mesh {
@@ -165,7 +165,7 @@
   }
 </style>
 
-<xr-scene style="height: 300px;">
+<xr-scene>
   <xr-camera radius="3" beta="60"></xr-camera>
   <xr-mesh></xr-mesh>
   <xr-mesh></xr-mesh>

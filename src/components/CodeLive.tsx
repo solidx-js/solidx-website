@@ -1,20 +1,20 @@
 import React, { useLayoutEffect, useMemo, useState } from 'react';
 import CodeBlock from '@theme/CodeBlock';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { iframeResizer } from 'iframe-resizer';
-import useIsBrowser from '@docusaurus/useIsBrowser';
 
 export interface ICodeLiveProps {
   className?: string;
   style?: React.CSSProperties;
   children: string;
 
-  defaultHeight?: number;
+  vpHeight?: number;
 }
 
-export const CodeLive = ({ className, style, children, defaultHeight }: ICodeLiveProps) => {
-  const ref = React.useRef<HTMLIFrameElement>(null);
-  const isBrowser = useIsBrowser();
+const isBrowser = typeof window !== 'undefined';
+
+export const CodeLive = ({ className, style, children, vpHeight = 300 }: ICodeLiveProps) => {
+  const liveContainerRef = React.useRef<HTMLDivElement>(null);
+  const [liveVisible, setLiveVisible] = useState<boolean>(false);
 
   const assetURLs = {
     iframeResizer: (isBrowser ? window.location.origin : '') + useBaseUrl('/iframeResizer.contentWindow.min.js'),
@@ -23,7 +23,7 @@ export const CodeLive = ({ className, style, children, defaultHeight }: ICodeLiv
   // 去除首尾空行
   const fragment = children.replace(/^\s+|\s+$/g, '');
 
-  const htmlBlobUrl = useMemo(() => {
+  const iframeURL = useMemo(() => {
     if (!isBrowser) return '';
 
     const html = `
@@ -72,38 +72,34 @@ export const CodeLive = ({ className, style, children, defaultHeight }: ICodeLiv
 </html>`;
 
     return URL.createObjectURL(new Blob([html], { type: 'text/html' }));
-  }, [fragment, isBrowser]);
+  }, [fragment]);
 
   useLayoutEffect(() => {
-    const iframe = ref.current;
-    if (!iframe) return;
+    const _container = liveContainerRef.current;
+    if (!_container) return;
 
-    iframeResizer({ checkOrigin: false, autoResize: true }, iframe);
-  }, [htmlBlobUrl]);
+    // 监听 container 何时进入或离开视口
+    const observer = new IntersectionObserver(([entry]) => setLiveVisible(entry.isIntersecting));
+    observer.observe(_container);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   const renderIframe = () => {
     return (
-      <iframe
-        ref={ref}
-        title='CodeLive'
-        src={htmlBlobUrl}
-        style={{
-          display: 'block',
-          width: '100%',
-          height: defaultHeight,
-          border: 'none',
-          overflow: 'hidden',
-          borderRadius: 4,
-          marginBottom: 8,
-        }}
-        onLoad={() => URL.revokeObjectURL(htmlBlobUrl)}
-      />
+      <div ref={liveContainerRef} style={{ height: vpHeight, overflow: 'hidden', borderRadius: 4, marginBottom: 8 }}>
+        {iframeURL && liveVisible ? (
+          <iframe title='CodeLive' src={iframeURL} style={{ display: 'block', width: '100%', height: '100%', border: 'none' }} />
+        ) : null}
+      </div>
     );
   };
 
   return (
     <div data-name='CodeLive' className={className} style={{ ...style }}>
-      {htmlBlobUrl && renderIframe()}
+      {renderIframe()}
       <CodeBlock language='html' showLineNumbers children={fragment} />
     </div>
   );
