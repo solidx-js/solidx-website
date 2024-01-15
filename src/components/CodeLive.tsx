@@ -16,9 +16,7 @@ export const CodeLive = ({ className, style, children, vpHeight = 300 }: ICodeLi
   const liveContainerRef = React.useRef<HTMLDivElement>(null);
   const [liveVisible, setLiveVisible] = useState<boolean>(false);
 
-  const assetURLs = {
-    iframeResizer: (isBrowser ? window.location.origin : '') + useBaseUrl('/iframeResizer.contentWindow.min.js'),
-  };
+  const baseURL = (isBrowser ? window.location.origin : '') + useBaseUrl('/').replace(/\/$/, '');
 
   // 去除首尾空行
   const fragment = children.replace(/^\s+|\s+$/g, '');
@@ -66,13 +64,14 @@ export const CodeLive = ({ className, style, children, vpHeight = 300 }: ICodeLi
   <body>
     ${fragment}
 
-    <script src="${assetURLs.iframeResizer}"></script>
     <script src="https://registry.npmmirror.com/solidx.js/latest/files/dist/index.js"></script>
   </body>
 </html>`;
 
-    return URL.createObjectURL(new Blob([html], { type: 'text/html' }));
-  }, [fragment]);
+    const replacedHtml = html.replace(/\{\{ BASE_URL \}\}/g, baseURL);
+
+    return URL.createObjectURL(new Blob([replacedHtml], { type: 'text/html' }));
+  }, [fragment, baseURL]);
 
   useLayoutEffect(() => {
     const _container = liveContainerRef.current;
