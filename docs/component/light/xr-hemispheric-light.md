@@ -7,7 +7,7 @@
 在一些需要模拟开阔环境的场景中，如户外或大型室内空间，半球光是一种非常实用的光照模型。
 
 :::warning
-在 babylon.js 引擎中，半球光不产生阴影，因此 `shadow-caster` 属性不起作用。如果需要阴影，可以使用 [xr-directional-light](/docs/component/xr-directional-light)。
+在 babylon.js 引擎中，半球光不产生阴影，因此 `shadow-caster` 属性不起作用。如果需要阴影，可以使用 [xr-directional-light](/docs/component/light/xr-directional-light.md)。
 :::
 
 ## 示例
