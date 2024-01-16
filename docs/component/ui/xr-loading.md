@@ -16,7 +16,7 @@
 {`
 <xr-scene render-delay="3000">
   <xr-camera radius="3" alpha="-45" beta="60"></xr-camera>
-  <xr-mesh geometry="type: box"></xr-mesh>
+  <xr-mesh geometry="?type=box"></xr-mesh>
   <xr-loading style="background: url({{ BASE_URL }}/img/social.png) center / contain no-repeat, #fff">
   </xr-loading>
 </xr-scene>

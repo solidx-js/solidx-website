@@ -10,9 +10,24 @@
 
 ### DamagedHelmet
 
-from: https://github.com/KhronosGroup/glTF-Sample-Assets/tree/main/Models/DamagedHelmet
+<CodeLive>
+{`
+<style>
+  xr-model {
+    ---src: "{{ BASE_URL }}/model/DamagedHelmet.glb";
+    ---rotation: 0 150 0;
+  }
+</style>
 
-<CodeSandboxLink url="https://codesandbox.io/embed/4cv2n3?view=preview&module=%2Findex.html" />
+<xr-scene>
+  <xr-camera radius="3"></xr-camera>
+  <xr-model></xr-model>
+  <xr-loading>
+    <div class="loading"></div>
+  </xr-loading>
+</xr-scene>
+`}
+</CodeLive>
 
 ## 公共属性
 

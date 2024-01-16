@@ -6,12 +6,11 @@
 
 ## 属性
 
-| 属性名             | 描述             | 类型      | 默认值           |
-| ------------------ | ---------------- | --------- | ---------------- |
-| **width**          | 宽度             | `Number`  | `600`            |
-| **height**         | 高度             | `Number`  | `400`            |
-| **env-url**        | 环境贴图         | `String`  | 内置 Studio 光照 |
-| **env-rotation-y** | 环境贴图旋转角度 | `Number`  | `0`              |
-| **contrast**       | 对比度           | `Number`  | `1.2`            |
-| **exposure**       | 曝光度           | `Number`  | `1.2`            |
-| **auto-resize**    | 自动调整大小     | `Boolean` | `false`          |
+| 属性名             | 描述             | 类型     | 默认值    |
+| ------------------ | ---------------- | -------- | --------- |
+| **background**     | 背景色           | `Color4` | `#ffffff` |
+| **env-url**        | 环境贴图         | `String` | -         |
+| **env-rotation-y** | 环境贴图旋转角度 | `Number` | -         |
+| **contrast**       | 对比度           | `Number` | `1.2`     |
+| **exposure**       | 曝光度           | `Number` | `1.2`     |
+| **render-delay**   | 渲染延迟         | `Number` | -         |

@@ -9,7 +9,7 @@
 <style>
   xr-point-light {
     animation: rotate 10s linear infinite;
-    ---inspect: 'scale: 5';
+    ---inspect: '?scale=5';
   }
   @keyframes rotate {
     from {
@@ -35,9 +35,9 @@
 <xr-scene env-intensity="0.05" background="#000">
   <xr-camera radius="3"></xr-camera>
   <xr-point-light intensity="3" shadow-caster="xr-mesh"></xr-point-light>
-  <xr-mesh geometry="type: sphere" position="-1 0 0"></xr-mesh>
-  <xr-mesh geometry="type: box" position="1 0 0"></xr-mesh>
-  <xr-mesh geometry="type: plane; size: 10" position="0 -0.8 0" rotation="90 0 0"></xr-mesh>
+  <xr-mesh geometry="?type=sphere" position="-1 0 0"></xr-mesh>
+  <xr-mesh geometry="?type=box" position="1 0 0"></xr-mesh>
+  <xr-mesh geometry="?type=plane &size=10" position="0 -0.8 0" rotation="90 0 0"></xr-mesh>
   <xr-loading>
     <div class='loading'></div>
   </xr-loading>

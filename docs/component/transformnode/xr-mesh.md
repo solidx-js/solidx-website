@@ -38,15 +38,15 @@
     animation: rotate 20s linear infinite;
   }
    xr-mesh:nth-of-type(1) {
-    ---geometry: "type: box; size: 0.5;";
+    ---geometry: "?type=box &size=0.5";
     ---position: -2 0 0;
   }
   xr-mesh:nth-of-type(2) {
-    ---geometry: "type: box;";
+    ---geometry: "?type=box";
     ---position: 0 0 0;
   }
   xr-mesh:nth-of-type(3) {
-    ---geometry: "type: box; width: 0.5; height: 1; depth: 0.1; subdivisions: 1";
+    ---geometry: "?type=box &width=0.5 &height=1 &depth=0.1 &subdivisions=1";
     ---position: 2 0 0;
   }
   @keyframes rotate {
@@ -93,15 +93,15 @@
     animation: rotate 20s linear infinite;
   }
   xr-mesh:nth-of-type(1) {
-    ---geometry: "type: sphere; diameter: 0.5;";
+    ---geometry: "?type=sphere &diameter=0.5";
     ---position: -2 0 0;
   }
   xr-mesh:nth-of-type(2) {
-    ---geometry: "type: sphere; arc: 0.8; slice: 0.7;";
+    ---geometry: "?type=sphere &arc=0.8 &slice=0.7";
     ---position: 0 0 0;
   }
   xr-mesh:nth-of-type(3) {
-    ---geometry: "type: sphere; diameter: 0.5; diameterX: 0.5; diameterY: 1; diameterZ: 0.1;";
+    ---geometry: "?type=sphere &diameter=0.5 &diameter-x=0.5 &diameter-y=1 &diameter-z=0.1";
     ---position: 2 0 0;
   }
   @keyframes rotate {
@@ -126,14 +126,14 @@
 `}
 </CodeLive>
 
-| 属性名        | 描述                                                                 | 类型     |
-| ------------- | -------------------------------------------------------------------- | -------- |
-| **diameter**  | 直径                                                                 | `Number` |
-| **diameterX** | 直径X                                                                | `Number` |
-| **diameterY** | 直径Y                                                                | `Number` |
-| **diameterZ** | 直径Z                                                                | `Number` |
-| **arc**       | 圆弧值，范围 0-1。以基于此值给定的周长（纬度环线）的比例创建非闭合球 | `Number` |
-| **slice**     | 切片值，范围 0-1。作用同 `arc` 属性，但是应用在 _经度环线_ 上        | `Number` |
+| 属性名         | 描述                                                                 | 类型     |
+| -------------- | -------------------------------------------------------------------- | -------- |
+| **diameter**   | 直径                                                                 | `Number` |
+| **diameter-x** | 直径X                                                                | `Number` |
+| **diameter-y** | 直径Y                                                                | `Number` |
+| **diameter-z** | 直径Z                                                                | `Number` |
+| **arc**        | 圆弧值，范围 0-1。以基于此值给定的周长（纬度环线）的比例创建非闭合球 | `Number` |
+| **slice**      | 切片值，范围 0-1。作用同 `arc` 属性，但是应用在 _经度环线_ 上        | `Number` |
 
 ### **type: cylinder** 圆柱体
 
@@ -144,15 +144,15 @@
     animation: rotate 20s linear infinite;
   }
   xr-mesh:nth-of-type(1) {
-    ---geometry: "type: cylinder; height: 1; diameterTop: 0.3;";
+    ---geometry: "?type=cylinder &height=1 &diameter-top=0.3";
     ---position: -2 0 0;
   }
   xr-mesh:nth-of-type(2) {
-    ---geometry: "type: cylinder; height: 1;";
+    ---geometry: "?type=cylinder &height=1";
     ---position: 0 0 0;
   }
   xr-mesh:nth-of-type(3) {
-    ---geometry: "type: cylinder; height: 1; diameterBottom: 0; cap: false";
+    ---geometry: "?type=cylinder &height=1 &diameter-bottom=0 &cap=false";
     ---position: 2 0 0;
   }
   @keyframes rotate {
@@ -177,16 +177,16 @@
 `}
 </CodeLive>
 
-| 属性名             | 描述     | 类型      |
-| ------------------ | -------- | --------- |
-| **height**         | 高度     | `Number`  |
-| **diameterTop**    | 顶部直径 | `Number`  |
-| **diameterBottom** | 底部直径 | `Number`  |
-| **tessellation**   | 细分数   | `Number`  |
-| **subdivisions**   | 细分数   | `Number`  |
-| **hasRings**       | 是否有环 | `Boolean` |
-| **enclose**        | 是否封闭 | `Boolean` |
-| **cap**            | 是否封顶 | `Boolean` |
+| 属性名              | 描述     | 类型      |
+| ------------------- | -------- | --------- |
+| **height**          | 高度     | `Number`  |
+| **diameter-top**    | 顶部直径 | `Number`  |
+| **diameter-bottom** | 底部直径 | `Number`  |
+| **tessellation**    | 细分数   | `Number`  |
+| **subdivisions**    | 细分数   | `Number`  |
+| **has-rings**       | 是否有环 | `Boolean` |
+| **enclose**         | 是否封闭 | `Boolean` |
+| **cap**             | 是否封顶 | `Boolean` |
 
 ### **type: disc** 圆盘
 

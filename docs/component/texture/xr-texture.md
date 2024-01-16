@@ -33,7 +33,7 @@
 <xr-scene>
   <xr-camera radius="2"></xr-camera>
   <xr-texture id="tex" url="{{ BASE_URL }}/img/social.png" invert-y></xr-texture>
-  <xr-mesh geometry="type: plane; width: 2" material="albedo-texture: #tex;"></xr-mesh>
+  <xr-mesh geometry="?type=plane & width=2" material="?albedo-texture=#tex"></xr-mesh>
   <xr-loading>
     <div class='loading'></div>
   </xr-loading>
