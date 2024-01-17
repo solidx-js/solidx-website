@@ -49,6 +49,12 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
+          sidebarId: 'example',
+          position: 'left',
+          label: '案例',
+        },
+        {
+          type: 'docSidebar',
           sidebarId: 'component',
           position: 'left',
           label: '组件',
