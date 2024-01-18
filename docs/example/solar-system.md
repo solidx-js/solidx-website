@@ -41,7 +41,7 @@
   <xr-camera radius="20" alpha="-35" beta="85" max-z="1000"></xr-camera>
 
   <!-- 设置特效 -->
-  <xr-volumetric-light source="#sun" excluded="xr-ground xr-mesh" exposure="0.3" weight="0.6" density="1.6"></xr-volumetric-light>
+  <xr-volumetric-light source="#sun" excluded="xr-ground xr-mesh" exposure="0.1" weight="0.6" density="1.6"></xr-volumetric-light>
   <!-- <xr-ground size="1000"></xr-ground> -->
 
   <!-- 准备贴图 -->
