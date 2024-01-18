@@ -27,7 +27,24 @@
   }
   /* 燃烧室 */
   .scene xr-model xr-node[name='plates_turbine_016'] xr-mesh {
-    ---material: '?albedo-color=yellow &emissive-color=yellow &emissive-intensity=1.2 &wireframe=true';
+    ---material: "?id=plates"
+  }
+  .scene #plates {
+    ---albedo-color: red;
+    ---emissive-color: red;
+    ---emissive-intensity: 1.2;
+    ---wireframe: true;
+    animation: blink 1s ease-in-out infinite alternate;
+  }
+  @keyframes blink {
+    0% {
+      ---emissive-intensity: 0.5;
+    }
+    100% {
+      ---emissive-intensity: 1.2;
+      ---albedo-color: yellow;
+      ---emissive-color: yellow;
+    } 
   }
 </style>
 
@@ -36,6 +53,7 @@
 
   <xr-glow intensity="0.5"></xr-glow>
 
+  <xr-material id="plates"></xr-material>
   <xr-model src="{{ BASE_URL }}/model/turbine-01.glb" rotation="0 150 0" auto-play loop></xr-model>
 
   <xr-loading>
