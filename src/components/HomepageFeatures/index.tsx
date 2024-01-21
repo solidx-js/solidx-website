@@ -38,9 +38,15 @@ function Feature({ title, Svg, description }: FeatureItem) {
       {/* <div className='text--center'>
         <Svg className={styles.featureSvg} role='img' />
       </div> */}
-      <div className='text--center padding-horiz--md'>
+      <div
+        className='text--center padding--lg'
+        style={{
+          borderRadius: 'var(--ifm-card-border-radius)',
+          backgroundColor: 'var(--ifm-card-background-color)',
+        }}
+      >
         <Heading as='h3'>{title}</Heading>
-        <p>{description}</p>
+        <p style={{ margin: 0 }}>{description}</p>
       </div>
     </div>
   );

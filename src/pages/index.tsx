@@ -6,21 +6,32 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+  const codeExampleURL = useBaseUrl('/img/code-exmaple.png');
+
   return (
-    <header className={clsx('hero hero--primary', 'social-pattern', styles.heroBanner)}>
+    <header className={clsx('hero', styles.heroBanner)} style={{ background: 'none' }}>
       <div className='container'>
-        <Heading as='h1' className='hero__title'>
-          {siteConfig.title}
-        </Heading>
-        <p className='hero__subtitle'>{siteConfig.tagline}</p>
-        {/* <div className={styles.buttons}>
-          <Link className='button button--secondary button--lg' to='/docs/intro'>
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div> */}
+        <div className='row row--align-center'>
+          <div className='col col-6'>
+            <Heading
+              as='h1'
+              className='hero__title'
+              style={{ color: '#fff', fontSize: 64, textDecoration: 'underline', textAlign: 'left' }}
+            >
+              {siteConfig.title}
+            </Heading>
+            <p className='hero__subtitle' style={{ color: '#fff', textAlign: 'left' }}>
+              {siteConfig.tagline}
+            </p>
+          </div>
+          <div className='col col-6'>
+            <img src={codeExampleURL} />
+          </div>
+        </div>
       </div>
     </header>
   );
