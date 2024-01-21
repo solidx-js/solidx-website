@@ -51,25 +51,25 @@
   <xr-texture id="venus-tex" url="{{ BASE_URL }}/img/1k_venus_surface.jpg"></xr-texture>
 
   <!-- 太阳 -->
-  <xr-mesh id="sun" geometry="?type=sphere" material="?albedo-texture=#sun-tex &unlit=true" scale="-8 8 8">
+  <xr-mesh id="sun" geometry="primitive://sphere" material="primitive://pbr?albedo-texture=#sun-tex&unlit=true" scale="-8 8 8">
     <xr-point-light position="0 0 0" intensity="1000"></xr-point-light>
   </xr-mesh>
 
   <!-- 水星 -->
   <xr-node id="mercury-root">
-    <xr-mesh id="mercury" geometry="?type=sphere" material="?albedo-texture=#mercury-tex" position="8 0 0" scale="-0.5 0.5 0.5"></xr-mesh>
+    <xr-mesh id="mercury" geometry="primitive://sphere" material="primitive://pbr?albedo-texture=#mercury-tex" position="8 0 0" scale="-0.5 0.5 0.5"></xr-mesh>
     <xr-ellipse class="orth" id="mercury-orth" radius-x="8" radius-y="8" rotation="90 0 0"></xr-ellipse>
   </xr-node>
 
   <!-- 金星 -->
   <xr-node id="venus-root">
-    <xr-mesh id="venus" geometry="?type=sphere" material="?albedo-texture=#venus-tex" position="10 0 0" scale="-0.8 0.8 0.8"></xr-mesh>
+    <xr-mesh id="venus" geometry="primitive://sphere" material="primitive://pbr?albedo-texture=#venus-tex" position="10 0 0" scale="-0.8 0.8 0.8"></xr-mesh>
     <xr-ellipse class="orth" id="venus-orth" radius-x="10" radius-y="10" rotation="90 0 0"></xr-ellipse>
   </xr-node>
 
   <!-- 地球 -->
   <xr-node id="earth-root">
-    <xr-mesh id="earth" geometry="?type=sphere" material="?albedo-texture=#earth-tex" position="12 0 0" scale="-1 1 1"></xr-mesh>
+    <xr-mesh id="earth" geometry="primitive://sphere" material="primitive://pbr?albedo-texture=#earth-tex" position="12 0 0" scale="-1 1 1"></xr-mesh>
     <xr-ellipse class="orth" id="earth-orth" radius-x="12" radius-y="12" rotation="90 0 0"></xr-ellipse>
   </xr-node>
   

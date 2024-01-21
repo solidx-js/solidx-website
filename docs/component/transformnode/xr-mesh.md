@@ -38,15 +38,15 @@
     animation: rotate 20s linear infinite;
   }
    xr-mesh:nth-of-type(1) {
-    ---geometry: "?type=box &size=0.5";
+    ---geometry: "primitive://bpx?size=0.5";
     ---position: -2 0 0;
   }
   xr-mesh:nth-of-type(2) {
-    ---geometry: "?type=box";
+    ---geometry: "primitive://box";
     ---position: 0 0 0;
   }
   xr-mesh:nth-of-type(3) {
-    ---geometry: "?type=box &width=0.5 &height=1 &depth=0.1 &subdivisions=1";
+    ---geometry: "primitive://bpx?width=0.5&height=1&depth=0.1&subdivisions=1";
     ---position: 2 0 0;
   }
   @keyframes rotate {
@@ -93,15 +93,15 @@
     animation: rotate 20s linear infinite;
   }
   xr-mesh:nth-of-type(1) {
-    ---geometry: "?type=sphere &diameter=0.5";
+    ---geometry: "primitive://sphere?diameter=0.5";
     ---position: -2 0 0;
   }
   xr-mesh:nth-of-type(2) {
-    ---geometry: "?type=sphere &arc=0.8 &slice=0.7";
+    ---geometry: "primitive://sphere?arc=0.8&slice=0.7";
     ---position: 0 0 0;
   }
   xr-mesh:nth-of-type(3) {
-    ---geometry: "?type=sphere &diameter=0.5 &diameter-x=0.5 &diameter-y=1 &diameter-z=0.1";
+    ---geometry: "primitive://sphere?diameter=0.5&diameter-x=0.5&diameter-y=1&diameter-z=0.1";
     ---position: 2 0 0;
   }
   @keyframes rotate {
@@ -144,15 +144,15 @@
     animation: rotate 20s linear infinite;
   }
   xr-mesh:nth-of-type(1) {
-    ---geometry: "?type=cylinder &height=1 &diameter-top=0.3";
+    ---geometry: "primitive://cylinder?height=1&diameter-top=0.3";
     ---position: -2 0 0;
   }
   xr-mesh:nth-of-type(2) {
-    ---geometry: "?type=cylinder &height=1";
+    ---geometry: "primitive://cylinder?height=1";
     ---position: 0 0 0;
   }
   xr-mesh:nth-of-type(3) {
-    ---geometry: "?type=cylinder &height=1 &diameter-bottom=0 &cap=false";
+    ---geometry: "primitive://cylinder?height=1&diameter-bottom=0&cap=false";
     ---position: 2 0 0;
   }
   @keyframes rotate {

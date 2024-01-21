@@ -31,9 +31,12 @@
   }
 </style>
 <xr-scene>
+  <xr-gui>
+    <xr-gui-folder source="xr-texture"></xr-gui-folder>
+  </xr-gui>
   <xr-camera radius="2"></xr-camera>
   <xr-texture id="tex" url="{{ BASE_URL }}/img/social.png" invert-y></xr-texture>
-  <xr-mesh geometry="?type=plane & width=2" material="?albedo-texture=#tex"></xr-mesh>
+  <xr-mesh geometry="primitive://plane?width=2" material="primitive://pbr?albedo-texture=#tex"></xr-mesh>
   <xr-loading>
     <div class='loading'></div>
   </xr-loading>

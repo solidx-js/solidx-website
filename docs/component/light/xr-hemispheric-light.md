@@ -19,7 +19,7 @@
     animation: rotate 10s linear infinite;
     ---diffuse: yellow;
     ---ground-color: blue;
-    ---inspect: '?scale=5';
+    ---inspect: 'scale: 5';
     ---beta: 30;
   }
   @keyframes rotate {
@@ -33,10 +33,14 @@
 </style>
 
 <xr-scene env-intensity="0.05" background="#000">
+  <xr-gui>
+    <xr-gui-folder source="xr-hemispheric-light"></xr-gui-folder>
+  </xr-gui>
+
   <xr-camera radius="3"></xr-camera>
   <xr-hemispheric-light intensity="3" shadow-caster="xr-mesh"></xr-hemispheric-light>
-  <xr-mesh geometry="?type=sphere" position="-1 0 0"></xr-mesh>
-  <xr-mesh geometry="?type=box" position="1 0 0"></xr-mesh>
+  <xr-mesh geometry="primitive://sphere" position="-1 0 0"></xr-mesh>
+  <xr-mesh geometry="primitive://box" position="1 0 0"></xr-mesh>
   <xr-loading>
     <div class="loading"></div>
   </xr-loading>

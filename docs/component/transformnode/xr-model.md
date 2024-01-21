@@ -20,6 +20,9 @@
 </style>
 
 <xr-scene>
+  <xr-gui>
+    <xr-gui-folder source="xr-model"></xr-gui-folder>
+  </xr-gui>
   <xr-camera radius="3"></xr-camera>
   <xr-model></xr-model>
   <xr-loading>
