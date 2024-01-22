@@ -40,7 +40,7 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={`Hello from ${siteConfig.title}`} description='Description will go into a meta tag in <head />'>
+    <Layout title={'零门槛，零构建，开箱即用的 WEB 3D 组件'} description={siteConfig.tagline}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
