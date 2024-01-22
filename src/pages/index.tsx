@@ -27,6 +27,11 @@ function HomepageHeader() {
             <p className='hero__subtitle' style={{ color: '#fff', textAlign: 'left' }}>
               {siteConfig.tagline}
             </p>
+            <div className={styles.buttons}>
+              <Link className='button button--secondary' to='/docs/example/solar-system'>
+                浏览案例
+              </Link>
+            </div>
           </div>
           <div className='col col-6'>
             <img src={codeExampleURL} />
