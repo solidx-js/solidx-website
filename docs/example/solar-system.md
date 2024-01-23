@@ -38,6 +38,10 @@
 </style>
   
 <xr-scene background="#000000" env-intensity="0.2">
+  <xr-gui>
+    <xr-gui-folder source="xr-scene"></xr-gui-folder>
+  </xr-gui>
+
   <xr-camera radius="20" alpha="-45" beta="85" max-z="1000"></xr-camera>
 
   <!-- 设置特效 -->

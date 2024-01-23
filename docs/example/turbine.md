@@ -49,6 +49,10 @@
 </style>
 
 <xr-scene class="scene" inspectx background="#000">
+  <xr-gui>
+    <xr-gui-folder source="xr-scene"></xr-gui-folder>
+  </xr-gui>
+  
   <xr-camera radius="3" alpha="-50"></xr-camera>
 
   <xr-glow intensity="0.5"></xr-glow>
