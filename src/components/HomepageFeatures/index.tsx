@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({ title, Svg, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--4')} style={{ marginBottom: 32 }}>
       {/* <div className='text--center'>
         <Svg className={styles.featureSvg} role='img' />
       </div> */}

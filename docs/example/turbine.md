@@ -58,7 +58,7 @@
   <xr-glow intensity="0.5"></xr-glow>
 
   <xr-material id="plates"></xr-material>
-  <xr-model src="{{ BASE_URL }}/model/turbine-01.glb" rotation="0 150 0" auto-play loop></xr-model>
+  <xr-model src="{{ BASE_URL }}/model/turbine-01.glb" rotation="0 150 0" auto-play="true" loop="true"></xr-model>
 
   <xr-loading>
     <div class="loading"></div>

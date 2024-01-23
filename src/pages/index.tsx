@@ -16,7 +16,7 @@ function HomepageHeader() {
     <header className={clsx('hero', styles.heroBanner)} style={{ background: 'none' }}>
       <div className='container'>
         <div className='row row--align-center'>
-          <div className='col col-6'>
+          <div className='col col-6' style={{ marginBottom: 32 }}>
             <Heading
               as='h1'
               className='hero__title'

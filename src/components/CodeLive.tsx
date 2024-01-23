@@ -21,7 +21,7 @@ export const CodeLive = ({ className, style, children, vpHeight = 400 }: ICodeLi
   // 去除首尾空行
   const fragment = children.replace(/^\s+|\s+$/g, '');
 
-  const iframeURL = useMemo(() => {
+  const iframeHTML = useMemo(() => {
     if (!isBrowser) return '';
 
     const html = `
@@ -68,9 +68,7 @@ export const CodeLive = ({ className, style, children, vpHeight = 400 }: ICodeLi
   </body>
 </html>`;
 
-    const replacedHtml = html.replace(/\{\{ BASE_URL \}\}/g, baseURL);
-
-    return URL.createObjectURL(new Blob([replacedHtml], { type: 'text/html' }));
+    return html.replace(/\{\{ BASE_URL \}\}/g, baseURL);
   }, [fragment, baseURL]);
 
   useLayoutEffect(() => {
@@ -86,12 +84,30 @@ export const CodeLive = ({ className, style, children, vpHeight = 400 }: ICodeLi
     };
   }, []);
 
+  useLayoutEffect(() => {
+    const _container = liveContainerRef.current;
+    if (!_container) return;
+
+    const iframe = _container.querySelector('iframe');
+    if (!iframe) return;
+
+    if (liveVisible) {
+      // 用 contentDocument 方式写入 iframe，避免 wx 浏览器不兼容
+      const doc = iframe.contentDocument;
+      if (!doc) return;
+
+      doc.open();
+      doc.write(iframeHTML);
+      doc.close();
+    } else {
+      iframe.src = 'about:blank';
+    }
+  }, [liveVisible]);
+
   const renderIframe = () => {
     return (
       <div ref={liveContainerRef} style={{ height: vpHeight, overflow: 'hidden', borderRadius: 4, marginBottom: 8 }}>
-        {iframeURL && liveVisible ? (
-          <iframe title='CodeLive' src={iframeURL} style={{ display: 'block', width: '100%', height: '100%', border: 'none' }} />
-        ) : null}
+        {liveVisible ? <iframe title='CodeLive' style={{ display: 'block', width: '100%', height: '100%', border: 'none' }} /> : null}
       </div>
     );
   };
