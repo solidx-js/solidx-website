@@ -14,3 +14,4 @@
 | **contrast**       | 对比度           | `Number` | `1.2`     |
 | **exposure**       | 曝光度           | `Number` | `1.2`     |
 | **render-delay**   | 渲染延迟         | `Number` | -         |
+

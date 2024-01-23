@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'solidx.js',
-  tagline: '零门槛，零构建，开箱即用的 WEB 3D 组件',
+  tagline: '零构建，开箱即用的 WEB 3D 组件',
   favicon: 'favicon.ico',
 
   // Set the production url of your site here
@@ -58,7 +58,7 @@ const config: Config = {
         },
         {
           type: 'docSidebar',
-          sidebarId: 'component',
+          sidebarId: 'element',
           position: 'left',
           label: '组件',
         },

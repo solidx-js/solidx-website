@@ -12,7 +12,7 @@ export interface ICodeLiveProps {
 
 const isBrowser = typeof window !== 'undefined';
 
-export const CodeLive = ({ className, style, children, vpHeight = 300 }: ICodeLiveProps) => {
+export const CodeLive = ({ className, style, children, vpHeight = 400 }: ICodeLiveProps) => {
   const liveContainerRef = React.useRef<HTMLDivElement>(null);
   const [liveVisible, setLiveVisible] = useState<boolean>(false);
 

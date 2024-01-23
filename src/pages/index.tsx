@@ -28,8 +28,11 @@ function HomepageHeader() {
               {siteConfig.tagline}
             </p>
             <div className={styles.buttons}>
-              <Link className='button button--secondary' to='/docs/example/solar-system'>
+              <Link className='button button--primary' to='/docs/example/solar-system'>
                 浏览案例
+              </Link>
+              <Link className='button button--secondary' to='/docs/element/xr-scene'>
+                组件文档
               </Link>
             </div>
           </div>
@@ -45,7 +48,7 @@ function HomepageHeader() {
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title={'零门槛，零构建，开箱即用的 WEB 3D 组件'} description={siteConfig.tagline}>
+    <Layout title={'零构建，开箱即用的 WEB 3D 组件'} description={siteConfig.tagline}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
