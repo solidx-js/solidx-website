@@ -4,54 +4,96 @@
 - tag: `<xr-ground></xr-ground>`
 - class: `XRGround`
 
-## Attributes
+## 属性
 
 
 ### inspect
 
-- data type: `Object`
-- initial value: `-`
+检查模式
+
+- 数据类型: `Object`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disabled
 
-- data type: `Boolean`
-- initial value: `-`
+禁用
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### position
 
-- data type: `Vector3`
-- initial value: `-`
+位置
+
+- 数据类型: `Vector3`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### rotation
 
-- data type: `Vector3`
-- initial value: `-`
+旋转
+
+- 数据类型: `Vector3`
+- 初始值: `-`
+- 最小值: `0`
+- 最大值: `360`
+- 枚举: `-`
+
 
   
 
 ### scale
 
-- data type: `Vector3`
-- initial value: `1 1 1`
+缩放
+
+- 数据类型: `Vector3`
+- 初始值: `1 1 1`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### type
 
-- data type: `String`
-- initial value: `"plane"`
+
+
+- 数据类型: `String`
+- 初始值: `"plane"`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### size
 
-- data type: `Number`
-- initial value: `100`
+
+
+- 数据类型: `Number`
+- 初始值: `100`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   

@@ -4,54 +4,96 @@
 - tag: `<xr-dragger></xr-dragger>`
 - class: `XRDragger`
 
-## Attributes
+## 属性
 
 
 ### inspect
 
-- data type: `Object`
-- initial value: `-`
+检查模式
+
+- 数据类型: `Object`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disabled
 
-- data type: `Boolean`
-- initial value: `-`
+禁用
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### scale
 
-- data type: `Vector3`
-- initial value: `1 1 1`
+缩放
+
+- 数据类型: `Vector3`
+- 初始值: `1 1 1`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### enable-position
 
-- data type: `Boolean`
-- initial value: `-`
+启用平移
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### enable-rotation
 
-- data type: `Boolean`
-- initial value: `-`
+启用旋转
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### enable-scale
 
-- data type: `Boolean`
-- initial value: `-`
+启用缩放
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### target
 
-- data type: `URI`
-- initial value: `-`
+目标
+
+- 数据类型: `URI`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   

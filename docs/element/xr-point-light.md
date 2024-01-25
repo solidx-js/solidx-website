@@ -4,68 +4,122 @@
 - tag: `<xr-point-light></xr-point-light>`
 - class: `XRPointLight`
 
-## Attributes
+## 属性
 
 
 ### inspect
 
-- data type: `Object`
-- initial value: `-`
+检查模式
+
+- 数据类型: `Object`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disabled
 
-- data type: `Boolean`
-- initial value: `-`
+禁用
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### diffuse
 
-- data type: `Color3`
-- initial value: `#FFFFFF`
+漫反射颜色
+
+- 数据类型: `Color3`
+- 初始值: `#FFFFFF`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### intensity
 
-- data type: `Number`
-- initial value: `1`
+强度
+
+- 数据类型: `Number`
+- 初始值: `1`
+- 最小值: `0`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### shadow-caster
 
-- data type: `String`
-- initial value: `-`
+阴影投射源
+
+- 数据类型: `String`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### shadow-caster-filtering-quality
 
-- data type: `Number`
-- initial value: `1`
+阴影投射过滤质量
+
+- 数据类型: `Number`
+- 初始值: `1`
+- 最小值: `0`
+- 最大值: `2`
+- 枚举: `-`
+
 
   
 
 ### shadow-caster-bias
 
-- data type: `Number`
-- initial value: `0.01`
+阴影投射偏移
+
+- 数据类型: `Number`
+- 初始值: `0.01`
+- 最小值: `0`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### shadow-caster-normal-bias
 
-- data type: `Number`
-- initial value: `0.01`
+阴影投射法线偏移
+
+- 数据类型: `Number`
+- 初始值: `0.01`
+- 最小值: `0`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### position
 
-- data type: `Vector3`
-- initial value: `-`
+位置
+
+- 数据类型: `Vector3`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   

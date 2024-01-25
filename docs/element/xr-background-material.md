@@ -4,103 +4,187 @@
 - tag: `<xr-background-material></xr-background-material>`
 - class: `XRBackgroundMaterial`
 
-## Attributes
+## 属性
 
 
 ### inspect
 
-- data type: `Object`
-- initial value: `-`
+检查模式
+
+- 数据类型: `Object`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disabled
 
-- data type: `Boolean`
-- initial value: `-`
+禁用
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### backface-culling
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### alpha
 
-- data type: `Number`
-- initial value: `1`
+
+
+- 数据类型: `Number`
+- 初始值: `1`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### side-orientation
 
-- data type: `Number`
-- initial value: `-`
+
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### wireframe
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### alpha-mode
 
-- data type: `Number`
-- initial value: `2`
+
+
+- 数据类型: `Number`
+- 初始值: `2`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disable-depth-write
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### z-offset
 
-- data type: `Number`
-- initial value: `-`
+
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### entity-delegated
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### use-rgb-color
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### primary-color
 
-- data type: `Color3`
-- initial value: `-`
+
+
+- 数据类型: `Color3`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### enable-noise
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### reflection-texture
 
-- data type: `URI`
-- initial value: `-`
+
+
+- 数据类型: `URI`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   

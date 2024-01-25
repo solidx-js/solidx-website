@@ -4,61 +4,122 @@
 - tag: `<xr-camera></xr-camera>`
 - class: `XRCamera`
 
-## Attributes
+## 属性
 
 
 ### inspect
 
-- data type: `Object`
-- initial value: `-`
+检查模式
+
+- 数据类型: `Object`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disabled
 
-- data type: `Boolean`
-- initial value: `-`
+禁用
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### alpha
 
-- data type: `Number`
-- initial value: `-90`
+Alpha (deg)
+
+- 数据类型: `Number`
+- 初始值: `-90`
+- 最小值: `0`
+- 最大值: `360`
+- 枚举: `-`
+
 
   
 
 ### beta
 
-- data type: `Number`
-- initial value: `90`
+Beta (deg)
+
+- 数据类型: `Number`
+- 初始值: `90`
+- 最小值: `0`
+- 最大值: `180`
+- 枚举: `-`
+
 
   
 
 ### radius
 
-- data type: `Number`
-- initial value: `10`
+半径
+
+- 数据类型: `Number`
+- 初始值: `10`
+- 最小值: `0`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### locked-target
 
-- data type: `Vector3`
-- initial value: `0 0 0`
+锁定目标
+
+- 数据类型: `Vector3`
+- 初始值: `0 0 0`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### min-z
 
-- data type: `Number`
-- initial value: `0.1`
+近裁平面 z
+
+- 数据类型: `Number`
+- 初始值: `0.1`
+- 最小值: `0`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### max-z
 
-- data type: `Number`
-- initial value: `100`
+远裁平面 z
+
+- 数据类型: `Number`
+- 初始值: `100`
+- 最小值: `0`
+- 最大值: `-`
+- 枚举: `-`
+
+
+  
+
+### attach-control
+
+附加控制
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   

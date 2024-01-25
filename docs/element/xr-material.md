@@ -4,397 +4,733 @@
 - tag: `<xr-material></xr-material>`
 - class: `XRMaterial`
 
-## Attributes
+## 属性
 
 
 ### inspect
 
-- data type: `Object`
-- initial value: `-`
+检查模式
+
+- 数据类型: `Object`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disabled
 
-- data type: `Boolean`
-- initial value: `-`
+禁用
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### backface-culling
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### alpha
 
-- data type: `Number`
-- initial value: `1`
+
+
+- 数据类型: `Number`
+- 初始值: `1`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### side-orientation
 
-- data type: `Number`
-- initial value: `-`
+
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### wireframe
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### alpha-mode
 
-- data type: `Number`
-- initial value: `2`
+
+
+- 数据类型: `Number`
+- 初始值: `2`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disable-depth-write
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### z-offset
 
-- data type: `Number`
-- initial value: `-`
+
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### entity-delegated
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### transparency-mode
 
-- data type: `Number`
-- initial value: `2`
+透明模式
+
+- 数据类型: `Number`
+- 初始值: `2`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### albedo-color
 
-- data type: `Color3`
-- initial value: `#FFFFFF`
+漫反射颜色
+
+- 数据类型: `Color3`
+- 初始值: `#FFFFFF`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### albedo-texture
 
-- data type: `URI`
-- initial value: `-`
+漫反射贴图
+
+- 数据类型: `URI`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### metallic
 
-- data type: `Number`
-- initial value: `0.2`
+金属度
+
+- 数据类型: `Number`
+- 初始值: `0.2`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### roughness
 
-- data type: `Number`
-- initial value: `0.8`
+粗糙度
+
+- 数据类型: `Number`
+- 初始值: `0.8`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### emissive-color
 
-- data type: `Color3`
-- initial value: `-`
+自发光颜色
+
+- 数据类型: `Color3`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### emissive-intensity
 
-- data type: `Number`
-- initial value: `-`
+自发光强度
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### unlit
 
-- data type: `Boolean`
-- initial value: `-`
+不受光照影响
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### ambient-texture
 
-- data type: `URI`
-- initial value: `-`
+环境遮蔽贴图
+
+- 数据类型: `URI`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### ambient-texture-strength
 
-- data type: `Number`
-- initial value: `1`
+环境遮蔽贴图强度
+
+- 数据类型: `Number`
+- 初始值: `1`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### opacity-texture
 
-- data type: `URI`
-- initial value: `-`
+透明贴图
+
+- 数据类型: `URI`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### reflection-texture
 
-- data type: `URI`
-- initial value: `-`
+反射贴图
 
+- 数据类型: `URI`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
+这个纹理用于模拟物体表面的环境反射。它通常是一个包含环境场景的立方体贴图（cube map），用于模拟物体表面反射环境中的物体。
   
 
 ### reflectivity-texture
 
-- data type: `URI`
-- initial value: `-`
+反射率贴图
 
+- 数据类型: `URI`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
+这个纹理用于模拟物体表面的反射率，也就是物体表面反射光线的能力。它通常是一个灰度贴图，其中的每个像素值表示对应表面点的反射率。反射率越高，物体表面反射的光线越多，看起来就越亮或者更像金属。
   
 
 ### metallic-texture
 
-- data type: `URI`
-- initial value: `-`
+金属度贴图
+
+- 数据类型: `URI`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### reflectance-texture
 
-- data type: `URI`
-- initial value: `-`
+漫反射率贴图
 
+- 数据类型: `URI`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
+这个纹理通常用于模拟物体表面的漫反射率，也就是物体表面散射光线的能力。它通常是一个颜色贴图，其中的每个像素值表示对应表面点的漫反射颜色。漫反射率越高，物体表面散射的光线越多，看起来就越亮。
   
 
 ### micro-surface-texture
 
-- data type: `String`
-- initial value: `-`
+微表面贴图
+
+- 数据类型: `String`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### bump-texture
 
-- data type: `URI`
-- initial value: `-`
+法线贴图
+
+- 数据类型: `URI`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### lightmap-texture
 
-- data type: `URI`
-- initial value: `-`
+光照贴图
+
+- 数据类型: `URI`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### refraction-texture
 
-- data type: `URI`
-- initial value: `-`
+折射贴图
+
+- 数据类型: `URI`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### ambient-color
 
-- data type: `Color3`
-- initial value: `-`
+环境遮蔽颜色
+
+- 数据类型: `Color3`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### reflectivity-color
 
-- data type: `Color3`
-- initial value: `-`
+
+
+- 数据类型: `Color3`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### reflection-color
 
-- data type: `Color3`
-- initial value: `#FFFFFF`
+
+
+- 数据类型: `Color3`
+- 初始值: `#FFFFFF`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### micro-surface
 
-- data type: `Number`
-- initial value: `1`
+
+
+- 数据类型: `Number`
+- 初始值: `1`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### index-of-refraction
 
-- data type: `Number`
-- initial value: `-`
+折射率
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### alpha-cut-off
 
-- data type: `Number`
-- initial value: `-`
+透明度截断
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### parallax-scale-bias
 
-- data type: `Number`
-- initial value: `-`
+视差偏移
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### invert-refraction-y
 
-- data type: `Boolean`
-- initial value: `-`
+反转折射贴图的 Y 轴
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### link-refraction-with-transparency
 
-- data type: `Boolean`
-- initial value: `-`
+将折射与透明度关联
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### use-lightmap-as-shadowmap
 
-- data type: `Boolean`
-- initial value: `-`
+使用光照贴图作为阴影贴图
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### use-alpha-from-albedo-texture
 
-- data type: `Boolean`
-- initial value: `true`
+使用漫反射贴图的 alpha 通道
+
+- 数据类型: `Boolean`
+- 初始值: `true`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### force-alpha-test
 
-- data type: `Boolean`
-- initial value: `-`
+强制 alpha 测试
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### use-specular-over-alpha
 
-- data type: `Boolean`
-- initial value: `true`
+是否在透明度（Alpha）上应用高光（Specular）效果
+
+- 数据类型: `Boolean`
+- 初始值: `true`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### use-micro-surface-from-reflectivity-map-alpha
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### use-roughness-from-metallic-texture-alpha
 
-- data type: `Boolean`
-- initial value: `-`
+使用金属度贴图的 alpha 通道作为粗糙度
+
+- 数据类型: `Boolean`
+- 初始值: `true`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### use-roughness-from-metallic-texture-green
 
-- data type: `Boolean`
-- initial value: `-`
+使用金属度贴图的绿色通道作为粗糙度
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### use-metallness-from-metallic-texture-blue
 
-- data type: `Boolean`
-- initial value: `-`
+使用金属度贴图的蓝色通道作为金属度
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### use-ambient-occlusion-from-metallic-texture-red
 
-- data type: `Boolean`
-- initial value: `-`
+使用金属度贴图的红色通道作为环境遮蔽
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### use-ambient-in-gray-scale
 
-- data type: `Boolean`
-- initial value: `-`
+仅在其红色通道中包含环境遮蔽信息
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### use-auto-micro-surface-from-reflectivity-map
 
-- data type: `Boolean`
-- initial value: `-`
+使用反射率贴图自动计算微表面
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### use-radiance-over-alpha
 
-- data type: `Boolean`
-- initial value: `true`
+
+
+- 数据类型: `Boolean`
+- 初始值: `true`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### use-object-space-normal-map
 
-- data type: `Boolean`
-- initial value: `-`
+使用物体空间法线贴图
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### use-parallax
 
-- data type: `Boolean`
-- initial value: `-`
+启用视差
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### use-parallax-occlusion
 
-- data type: `Boolean`
-- initial value: `-`
+启用视差遮挡
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### enable-specular-anti-aliasing
 
-- data type: `Boolean`
-- initial value: `-`
+启用高光抗锯齿
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### apply-decal-map-after-detail-map
 
-- data type: `Boolean`
-- initial value: `-`
+在细节贴图之后应用贴花贴图
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### metallic-f0-factor
 
-- data type: `Number`
-- initial value: `-`
+菲涅尔系数
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `0`
+- 最大值: `1`
+- 枚举: `-`
+
 
   

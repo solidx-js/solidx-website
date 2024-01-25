@@ -4,117 +4,213 @@
 - tag: `<xr-texture></xr-texture>`
 - class: `XRTexture`
 
-## Attributes
+## 属性
 
 
 ### inspect
 
-- data type: `Object`
-- initial value: `-`
+检查模式
+
+- 数据类型: `Object`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disabled
 
-- data type: `Boolean`
-- initial value: `-`
+禁用
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### has-alpha
 
-- data type: `Boolean`
-- initial value: `-`
+是否有透明通道
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### level
 
-- data type: `Number`
-- initial value: `1`
+强度
+
+- 数据类型: `Number`
+- 初始值: `1`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### coordinates-index
 
-- data type: `Number`
-- initial value: `-`
+UV 索引
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `0`
+- 最大值: `3`
+- 枚举: `-`
+
 
   
 
 ### coordinates-mode
 
-- data type: `Number`
-- initial value: `-`
+UV 模式
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `0`
+- 最大值: `9`
+- 枚举: `-`
+
 
   
 
 ### wrap-u
 
-- data type: `Number`
-- initial value: `-`
+U 轴环绕
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### wrap-v
 
-- data type: `Number`
-- initial value: `-`
+V 轴环绕
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### url
 
-- data type: `String`
-- initial value: `-`
+图片地址
+
+- 数据类型: `String`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### u-offset
 
-- data type: `Number`
-- initial value: `-`
+U 轴偏移
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### v-offset
 
-- data type: `Number`
-- initial value: `-`
+V 轴偏移
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### u-scale
 
-- data type: `Number`
-- initial value: `1`
+U 轴缩放
+
+- 数据类型: `Number`
+- 初始值: `1`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### v-scale
 
-- data type: `Number`
-- initial value: `1`
+V 轴缩放
+
+- 数据类型: `Number`
+- 初始值: `1`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### invert-y
 
-- data type: `Boolean`
-- initial value: `-`
+是否反转 Y 轴
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### extension
 
-- data type: `String`
-- initial value: `-`
+扩展名
+
+- 数据类型: `String`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### entity-delegated
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   

@@ -4,75 +4,135 @@
 - tag: `<xr-scene></xr-scene>`
 - class: `XRScene`
 
-## Attributes
+## 属性
 
 
 ### inspect
 
-- data type: `Object`
-- initial value: `-`
+检查模式
+
+- 数据类型: `Object`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disabled
 
-- data type: `Boolean`
-- initial value: `-`
+禁用
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### background
 
-- data type: `Color4`
-- initial value: `#FFFFFFFF`
+背景颜色
+
+- 数据类型: `Color4`
+- 初始值: `#FFFFFFFF`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### env-url
 
-- data type: `String`
-- initial value: `-`
+环境贴图
+
+- 数据类型: `String`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### env-rotation-y
 
-- data type: `Number`
-- initial value: `-`
+环境贴图旋转 Y
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `0`
+- 最大值: `360`
+- 枚举: `-`
+
 
   
 
 ### env-intensity
 
-- data type: `Number`
-- initial value: `1`
+环境贴图强度
+
+- 数据类型: `Number`
+- 初始值: `1`
+- 最小值: `0`
+- 最大值: `10`
+- 枚举: `-`
+
 
   
 
 ### contrast
 
-- data type: `Number`
-- initial value: `1.2`
+对比度
+
+- 数据类型: `Number`
+- 初始值: `1.2`
+- 最小值: `0.1`
+- 最大值: `10`
+- 枚举: `-`
+
 
   
 
 ### exposure
 
-- data type: `Number`
-- initial value: `1.2`
+曝光度
+
+- 数据类型: `Number`
+- 初始值: `1.2`
+- 最小值: `0.1`
+- 最大值: `10`
+- 枚举: `-`
+
 
   
 
 ### hardware-scaling-level
 
-- data type: `Number`
-- initial value: `-`
+
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### render-delay
 
-- data type: `Number`
-- initial value: `-`
+
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   

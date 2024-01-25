@@ -4,89 +4,161 @@
 - tag: `<xr-cube-texture></xr-cube-texture>`
 - class: `XRCubeTexture`
 
-## Attributes
+## 属性
 
 
 ### inspect
 
-- data type: `Object`
-- initial value: `-`
+检查模式
+
+- 数据类型: `Object`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disabled
 
-- data type: `Boolean`
-- initial value: `-`
+禁用
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### has-alpha
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### level
 
-- data type: `Number`
-- initial value: `-`
+
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### coordinates-index
 
-- data type: `Number`
-- initial value: `-`
+
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### coordinates-mode
 
-- data type: `Number`
-- initial value: `-`
+
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### wrap-u
 
-- data type: `Number`
-- initial value: `-`
+
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### wrap-v
 
-- data type: `Number`
-- initial value: `-`
+
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### url
 
-- data type: `String`
-- initial value: `-`
+
+
+- 数据类型: `String`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### rotation-y
 
-- data type: `Number`
-- initial value: `-`
+
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### extension
 
-- data type: `String`
-- initial value: `-`
+
+
+- 数据类型: `String`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### entity-delegated
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   

@@ -4,6 +4,6 @@
 - tag: `<xr-gui></xr-gui>`
 - class: `XRGui`
 
-## Attributes
+## 属性
 
 

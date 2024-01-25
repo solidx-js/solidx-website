@@ -4,68 +4,122 @@
 - tag: `<xr-volumetric-light></xr-volumetric-light>`
 - class: `XRVolumetricLight`
 
-## Attributes
+## 属性
 
 
 ### inspect
 
-- data type: `Object`
-- initial value: `-`
+检查模式
+
+- 数据类型: `Object`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disabled
 
-- data type: `Boolean`
-- initial value: `-`
+禁用
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### camera
 
-- data type: `URI`
-- initial value: `-`
+作用相机
+
+- 数据类型: `URI`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### source
 
-- data type: `URI`
-- initial value: `-`
+源
+
+- 数据类型: `URI`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### excluded
 
-- data type: `String`
-- initial value: `-`
+排除
+
+- 数据类型: `String`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### exposure
 
-- data type: `Number`
-- initial value: `-`
+曝光
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `0`
+- 最大值: `10`
+- 枚举: `-`
+
 
   
 
 ### decay
 
-- data type: `Number`
-- initial value: `-`
+衰减
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `0`
+- 最大值: `10`
+- 枚举: `-`
+
 
   
 
 ### weight
 
-- data type: `Number`
-- initial value: `-`
+权重
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `0`
+- 最大值: `10`
+- 枚举: `-`
+
 
   
 
 ### density
 
-- data type: `Number`
-- initial value: `-`
+密度
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `0`
+- 最大值: `10`
+- 枚举: `-`
+
 
   

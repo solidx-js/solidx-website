@@ -8,16 +8,22 @@ for (const [tag, { cls, attribute }] of Object.entries(metadata.element)) {
 - tag: \`<${tag}></${tag}>\`
 - class: \`${cls}\`
 
-## Attributes
+## 属性
 
 ${Object.entries(attribute)
   .map(
-    ([attr, { dType, initValue }]) => `
+    ([attr, { dType, initValue, extra = {} }]) => `
 ### ${attr}
 
-- data type: \`${dType}\`
-- initial value: \`${initValue === null ? '-' : initValue}\`
+${extra.title ? extra.title : ''}
 
+- 数据类型: \`${dType}\`
+- 初始值: \`${initValue === null ? '-' : initValue}\`
+- 最小值: \`${typeof extra.min !== 'undefined' ? extra.min : '-'}\`
+- 最大值: \`${typeof extra.max !== 'undefined' ? extra.max : '-'}\`
+- 枚举: \`${extra.enums ? extra.enums.join(', ') : '-'}\`
+
+${extra.doc ? extra.doc : ''}
   `
   )
   .join('\n')}

@@ -4,117 +4,213 @@
 - tag: `<xr-grid-material></xr-grid-material>`
 - class: `XRGridMaterial`
 
-## Attributes
+## 属性
 
 
 ### inspect
 
-- data type: `Object`
-- initial value: `-`
+检查模式
+
+- 数据类型: `Object`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disabled
 
-- data type: `Boolean`
-- initial value: `-`
+禁用
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### backface-culling
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### alpha
 
-- data type: `Number`
-- initial value: `1`
+
+
+- 数据类型: `Number`
+- 初始值: `1`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### side-orientation
 
-- data type: `Number`
-- initial value: `-`
+
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### wireframe
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### alpha-mode
 
-- data type: `Number`
-- initial value: `2`
+
+
+- 数据类型: `Number`
+- 初始值: `2`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disable-depth-write
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### z-offset
 
-- data type: `Number`
-- initial value: `-`
+
+
+- 数据类型: `Number`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### entity-delegated
 
-- data type: `Boolean`
-- initial value: `-`
+
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### main-color
 
-- data type: `Color3`
-- initial value: `#FFFFFF`
+
+
+- 数据类型: `Color3`
+- 初始值: `#FFFFFF`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### line-color
 
-- data type: `Color3`
-- initial value: `#000000`
+
+
+- 数据类型: `Color3`
+- 初始值: `#000000`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### grid-ratio
 
-- data type: `Number`
-- initial value: `1`
+
+
+- 数据类型: `Number`
+- 初始值: `1`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### major-unit-frequency
 
-- data type: `Number`
-- initial value: `10`
+
+
+- 数据类型: `Number`
+- 初始值: `10`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### minor-unit-visible
 
-- data type: `Number`
-- initial value: `0.5`
+
+
+- 数据类型: `Number`
+- 初始值: `0.5`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### opacity
 
-- data type: `Number`
-- initial value: `0.99`
+
+
+- 数据类型: `Number`
+- 初始值: `0.99`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   

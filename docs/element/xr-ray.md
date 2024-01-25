@@ -4,40 +4,70 @@
 - tag: `<xr-ray></xr-ray>`
 - class: `XRRay`
 
-## Attributes
+## 属性
 
 
 ### inspect
 
-- data type: `Object`
-- initial value: `-`
+检查模式
+
+- 数据类型: `Object`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disabled
 
-- data type: `Boolean`
-- initial value: `-`
+禁用
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### position
 
-- data type: `Vector3`
-- initial value: `0 0 0`
+位置
+
+- 数据类型: `Vector3`
+- 初始值: `0 0 0`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### rotation
 
-- data type: `Vector3`
-- initial value: `0 0 0`
+旋转
+
+- 数据类型: `Vector3`
+- 初始值: `0 0 0`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### length
 
-- data type: `Number`
-- initial value: `1`
+长度
+
+- 数据类型: `Number`
+- 初始值: `1`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   

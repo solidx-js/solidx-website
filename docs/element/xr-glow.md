@@ -4,26 +4,44 @@
 - tag: `<xr-glow></xr-glow>`
 - class: `XRGlow`
 
-## Attributes
+## 属性
 
 
 ### inspect
 
-- data type: `Object`
-- initial value: `-`
+检查模式
+
+- 数据类型: `Object`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### disabled
 
-- data type: `Boolean`
-- initial value: `-`
+禁用
+
+- 数据类型: `Boolean`
+- 初始值: `-`
+- 最小值: `-`
+- 最大值: `-`
+- 枚举: `-`
+
 
   
 
 ### intensity
 
-- data type: `Number`
-- initial value: `1`
+强度
+
+- 数据类型: `Number`
+- 初始值: `1`
+- 最小值: `0`
+- 最大值: `10`
+- 枚举: `-`
+
 
   
