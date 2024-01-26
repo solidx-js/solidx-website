@@ -53,7 +53,7 @@ export default function Home(): JSX.Element {
   const renderFeatureList = () => {
     return (
       <section className='container'>
-        <h2 style={{ margin: '4rem 0 1rem 0', textAlign: 'center' }}>让 WEB 3D 更简单，更快捷</h2>
+        <h2 style={{ margin: '4rem 0 1rem 0', textAlign: 'center' }}>更简单，更快捷</h2>
         <p style={{ textAlign: 'center', marginBottom: '4rem' }}>零构建引入 3D 功能，无需关注底层技术，开箱即用。</p>
 
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 32 }}>
@@ -82,12 +82,29 @@ export default function Home(): JSX.Element {
     );
   };
 
+  const renderFeatureItem = (title: string, subtitle: string) => {
+    return (
+      <section className='container'>
+        <h2 style={{ margin: '4rem 0 1rem 0', textAlign: 'center' }}>{title}</h2>
+        <p style={{ textAlign: 'center', marginBottom: '4rem' }}>{subtitle}</p>
+      </section>
+    );
+  };
+
   return (
     <Layout title={'零构建，开箱即用的 WEB 3D 组件'} description={siteConfig.tagline}>
       <HomepageHeader />
 
       <main style={{ paddingBottom: 64 }}>
         <HomepageFeatures />
+
+        {renderFeatureItem(
+          'HTML 属性或 CSS 变量',
+          '无需过程式编码，只需要在 HTML 或 CSS 中声明你要什么。所有配置属性都可以是受控的。'
+        )}
+
+        {renderFeatureItem('原生 CSS 动画系统', '使用原生 CSS 选择器、Transition 和 Animation，就能让 3D 元素动起来。')}
+
         {renderFeatureList()}
       </main>
     </Layout>
