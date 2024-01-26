@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import ThemedImage from '@theme/ThemedImage';
 
 import styles from './index.module.css';
 import useBaseUrl, { useBaseUrlUtils } from '@docusaurus/useBaseUrl';
@@ -47,46 +48,14 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
-
   const { withBaseUrl } = useBaseUrlUtils();
 
-  const renderFeatureList = () => {
+  const renderFeatureItem = (title: string, subtitle: string, children?: any) => {
     return (
-      <section className='container'>
-        <h2 style={{ margin: '4rem 0 1rem 0', textAlign: 'center' }}>更简单，更快捷</h2>
-        <p style={{ textAlign: 'center', marginBottom: '4rem' }}>零构建引入 3D 功能，无需关注底层技术，开箱即用。</p>
-
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 32 }}>
-          {[
-            { text: '光源与阴影发生器', url: '/docs/example/光源/point-light', img: withBaseUrl('/img/feature/point-light.png') },
-            { text: '载入 GLB 模型', url: '/docs/example/几何体/xr-model', img: withBaseUrl('/img/feature/glb.png') },
-            { text: '拖拽变换控件', url: '/docs/example/控制器/drag', img: withBaseUrl('/img/feature/drag.png') },
-            { text: '体积光', url: '/docs/example/solar-system', img: withBaseUrl('/img/feature/solar-system.png') },
-          ].map((item, index) => (
-            <Link key={index} href={item.url} style={{ width: 'calc(50% - 16px)' }}>
-              <img
-                src={item.img}
-                style={{
-                  display: 'block',
-                  objectFit: 'cover',
-                  aspectRatio: '2',
-                  borderRadius: 'var(--ifm-card-border-radius)',
-                  overflow: 'hidden',
-                }}
-              />
-              <div style={{ color: '#fff', padding: '1rem', textAlign: 'center' }}>{item.text}</div>
-            </Link>
-          ))}
-        </div>
-      </section>
-    );
-  };
-
-  const renderFeatureItem = (title: string, subtitle: string) => {
-    return (
-      <section className='container'>
-        <h2 style={{ margin: '4rem 0 1rem 0', textAlign: 'center' }}>{title}</h2>
-        <p style={{ textAlign: 'center', marginBottom: '4rem' }}>{subtitle}</p>
+      <section className='container' style={{ marginTop: '4rem', marginBottom: '4rem' }}>
+        <h2 style={{ margin: '0 0 1rem 0', textAlign: 'center' }}>{title}</h2>
+        <p style={{ textAlign: 'center', marginBottom: '3rem' }}>{subtitle}</p>
+        {children && <div>{children}</div>}
       </section>
     );
   };
@@ -100,12 +69,46 @@ export default function Home(): JSX.Element {
 
         {renderFeatureItem(
           'HTML 属性或 CSS 变量',
-          '无需过程式编码，只需要在 HTML 或 CSS 中声明你要什么。所有状态都可以是受控的。'
+          '无需过程式编码，只需要在 HTML 或 CSS 中声明你要什么。所有状态都可以是受控的。',
+          <div className='row'>
+            <img className='col col--8 col--offset-2' src={withBaseUrl('/img/code-exmaple.png')} />
+          </div>
         )}
 
-        {renderFeatureItem('原生 CSS 动画系统', '使用原生 CSS 选择器、Transition 和 Animation，就能让 3D 元素动起来。')}
+        {renderFeatureItem(
+          '原生 CSS 动画系统',
+          '使用原生 CSS 选择器、Transition 和 Animation，就能让 3D 元素动起来。',
+          <div className='row'>
+            <img className='col col--8 col--offset-2' src={withBaseUrl('/img/feature/shadow-blink.gif')} />
+          </div>
+        )}
 
-        {renderFeatureList()}
+        {renderFeatureItem(
+          '更简单，更快捷',
+          '零构建引入 3D 功能，无需关注底层技术，开箱即用。',
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 32 }}>
+            {[
+              { text: '光源与阴影发生器', url: '/docs/example/光源/point-light', img: withBaseUrl('/img/feature/point-light.png') },
+              { text: '载入 GLB 模型', url: '/docs/example/几何体/xr-model', img: withBaseUrl('/img/feature/glb.png') },
+              { text: '拖拽变换控件', url: '/docs/example/控制器/drag', img: withBaseUrl('/img/feature/drag.png') },
+              { text: '体积光', url: '/docs/example/solar-system', img: withBaseUrl('/img/feature/solar-system.png') },
+            ].map((item, index) => (
+              <Link key={index} href={item.url} style={{ width: 'calc(50% - 16px)' }}>
+                <img
+                  src={item.img}
+                  style={{
+                    display: 'block',
+                    objectFit: 'cover',
+                    aspectRatio: '2',
+                    borderRadius: 'var(--ifm-card-border-radius)',
+                    overflow: 'hidden',
+                  }}
+                />
+                <div style={{ color: '#fff', padding: '1rem', textAlign: 'center' }}>{item.text}</div>
+              </Link>
+            ))}
+          </div>
+        )}
       </main>
     </Layout>
   );
