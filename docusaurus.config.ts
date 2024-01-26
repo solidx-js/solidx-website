@@ -44,8 +44,7 @@ const config: Config = {
     [
       '@docusaurus/plugin-ideal-image',
       {
-        min: 640, // min resized image's size.
-        steps: 2, // the max number of images generated between min and max (inclusive)
+        min: 200, // min resized image's size.
       },
     ],
   ],
@@ -62,6 +61,12 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
+          sidebarId: 'tutorial',
+          position: 'left',
+          label: '教程',
+        },
+        {
+          type: 'docSidebar',
           sidebarId: 'example',
           position: 'left',
           label: '案例',
@@ -70,7 +75,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'element',
           position: 'left',
-          label: '组件',
+          label: '组件文档',
         },
         {
           href: 'https://github.com/solidx-js/solidx.js',

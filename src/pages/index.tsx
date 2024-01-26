@@ -26,8 +26,8 @@ function HomepageHeader() {
               {siteConfig.tagline}
             </p>
             <div className={styles.buttons}>
-              <Link className='button button--primary' to='/docs/example/solar-system'>
-                浏览案例
+              <Link className='button button--primary' to='/docs/tutorial/install'>
+                入门教程
               </Link>
               <Link className='button button--secondary' to='/docs/element/xr-scene'>
                 组件文档
