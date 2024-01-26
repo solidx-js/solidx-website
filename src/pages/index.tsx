@@ -92,7 +92,7 @@ export default function Home(): JSX.Element {
   };
 
   return (
-    <Layout title={'零构建，开箱即用的 WEB 3D 组件'} description={siteConfig.tagline}>
+    <Layout title={siteConfig.tagline} description={siteConfig.tagline}>
       <HomepageHeader />
 
       <main style={{ paddingBottom: 64 }}>
@@ -100,7 +100,7 @@ export default function Home(): JSX.Element {
 
         {renderFeatureItem(
           'HTML 属性或 CSS 变量',
-          '无需过程式编码，只需要在 HTML 或 CSS 中声明你要什么。所有配置属性都可以是受控的。'
+          '无需过程式编码，只需要在 HTML 或 CSS 中声明你要什么。所有状态都可以是受控的。'
         )}
 
         {renderFeatureItem('原生 CSS 动画系统', '使用原生 CSS 选择器、Transition 和 Animation，就能让 3D 元素动起来。')}
