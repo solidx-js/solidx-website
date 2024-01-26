@@ -40,6 +40,16 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        min: 640, // min resized image's size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     colorMode: {
