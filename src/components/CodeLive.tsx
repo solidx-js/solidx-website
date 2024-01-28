@@ -64,7 +64,7 @@ export const CodeLive = ({ className, style, children, vpHeight = 400 }: ICodeLi
   <body>
     ${fragment}
 
-    <script src="http://localhost:52560/index.js"></script>
+    <script src="https://registry.npmmirror.com/solidx.js/latest/files/dist/index.js"></script>
   </body>
 </html>`;
 
