@@ -19,7 +19,7 @@ export const CodeLive = ({ className, style, children, vpHeight = 400 }: ICodeLi
   const baseURL = (isBrowser ? window.location.origin : '') + useBaseUrl('/').replace(/\/$/, '');
 
   // 去除首尾空行
-  const fragment = children.replace(/^\s+|\s+$/g, '');
+  const fragment = children.replace(/^\s+|\s+$/g, '').replace(/\{\{ BASE_URL \}\}/g, baseURL);
 
   const iframeHTML = useMemo(() => {
     if (!isBrowser) return '';
@@ -64,11 +64,11 @@ export const CodeLive = ({ className, style, children, vpHeight = 400 }: ICodeLi
   <body>
     ${fragment}
 
-    <script src="https://registry.npmmirror.com/solidx.js/latest/files/dist/index.js"></script>
+    <script src="http://localhost:52560/index.js"></script>
   </body>
 </html>`;
 
-    return html.replace(/\{\{ BASE_URL \}\}/g, baseURL);
+    return html;
   }, [fragment, baseURL]);
 
   useLayoutEffect(() => {
@@ -103,7 +103,7 @@ export const CodeLive = ({ className, style, children, vpHeight = 400 }: ICodeLi
       iframe.src = 'about:blank';
     }
   }, [liveVisible]);
-
+  
   const renderIframe = () => {
     return (
       <div ref={liveContainerRef} style={{ height: vpHeight, overflow: 'hidden', borderRadius: 4, marginBottom: 8 }}>
