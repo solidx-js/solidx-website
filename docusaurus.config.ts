@@ -111,7 +111,10 @@ const config: Config = {
       //     ],
       //   },
       // ],
-      copyright: `Copyright © ${new Date().getFullYear()} solidx.js <br> Built with Docusaurus.`,
+      copyright: `
+Copyright © ${new Date().getFullYear()} solidx.js
+<br>
+<a href="http://beian.miit.gov.cn/" target="_blank">浙ICP备2021031999号-2</a>`,
     },
     prism: {
       theme: prismThemes.github,
