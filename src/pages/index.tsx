@@ -37,7 +37,7 @@ function HomepageHeader() {
             </div>
           </div>
           <div className='col col-6'>
-            <Image img={withBaseUrl('/img/code-exmaple.png')} />
+            <Image img={withBaseUrl('/img/feature/shadow-blink.gif')} />
           </div>
         </div>
       </div>
