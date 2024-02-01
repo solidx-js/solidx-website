@@ -5,7 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "npm run pre-build && docusaurus start",
-    "build": "npm run pre-build && docusaurus build",
+    "build": "rm -rf build/* && npm run pre-build && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "ah-web-cli deploy --publicDir=build --stableAssetExts=js,css,dds,env,png",
     "clear": "docusaurus clear",
