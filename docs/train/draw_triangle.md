@@ -49,6 +49,9 @@
   gl.attachShader(program, fragmentShader);
   gl.linkProgram(program);
 
+  // 使用着色器程序
+  gl.useProgram(program);
+
   // 获取 attribute 变量的地址
   const a_position = gl.getAttribLocation(program, 'a_position');
 
@@ -70,9 +73,6 @@
   // 清空画布
   gl.clearColor(0, 0, 0, 1);
   gl.clear(gl.COLOR_BUFFER_BIT);
-
-  // 使用着色器程序
-  gl.useProgram(program);
 
   // 启用 attribute 变量
   gl.enableVertexAttribArray(a_position);
@@ -238,14 +238,13 @@ offset: 0
 在 WebGL 中，函数的调用顺序有一些要求。以下是推荐调用顺序：
 
 1. 创建着色器程序：`createShader()`、`shaderSource()`、`compileShader()`。
-1. 链接程序：`createProgram()`、`attachShader()`、`linkProgram()`。
+1. 链接使用程序：`createProgram()`、`attachShader()`、`linkProgram()`、`useProgram()`。
 1. 绑定缓冲区对象和顶点属性指针：`createBuffer()`、`bindBuffer()`、`bufferData()`，`vertexAttribPointer()`。
 1. 设置全局状态和其他数据：`clear()`、`uniform4fv()`。
-1. 使用着色器程序：`useProgram()`。
 1. 绘制图形：`drawArrays()`、`drawElements()`。
 1. 解绑缓冲区对象：`bindBuffer(target, null)`。在不需要频繁更新的情况下，可以解绑缓冲区对象以减少CPU到GPU的数据传输。
 
-**简化理解**: `链接程序 -> 设置状态机 -> 绘制 -> 解绑`
+**简化理解**: `链接使用程序 -> 设置状态机 -> 绘制 -> 解绑`
 
 ## regl 简化样板代码
 
