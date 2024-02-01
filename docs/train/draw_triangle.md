@@ -139,6 +139,12 @@
 
 可以使用按位或 `|` 运算符将这些标志位组合在一起，一次性清除多个缓冲区。
 
+:::info
+
+调用 `gl.clear()` 并不会立即渲染屏幕。这个函数用于清除屏幕和深度缓冲区，但它不会执行实际的渲染操作。相反，它只是设置了一个标记。
+
+:::
+
 ### 变量地址
 
 在 WebGL 中，我们可以使用 `gl.getAttribLocation()` 函数获取 attribute 变量的地址，使用 `gl.getUniformLocation()` 函数获取 uniform 变量的地址。
@@ -226,6 +232,20 @@ offset: 0
 和 `gl.drawArrays()` 功能类似的，还有 `gl.drawElements()` 函数。但它需要接受一个额外的参数，即索引缓冲区对象，用于指定绘制图元时使用的顶点索引。因此，它还需要两个缓冲区对象：一个用于存储顶点数据，一个用于存储顶点索引。
 
 :::
+
+### 调用顺序注意点
+
+在 WebGL 中，函数的调用顺序有一些要求。以下是推荐调用顺序：
+
+1. 创建着色器程序：`createShader()`、`shaderSource()`、`compileShader()`。
+1. 链接程序：`createProgram()`、`attachShader()`、`linkProgram()`。
+1. 绑定缓冲区对象和顶点属性指针：`createBuffer()`、`bindBuffer()`、`bufferData()`，`vertexAttribPointer()`。
+1. 设置全局状态和其他数据：`clear()`、`uniform4fv()`。
+1. 使用着色器程序：`useProgram()`。
+1. 绘制图形：`drawArrays()`、`drawElements()`。
+1. 解绑缓冲区对象：`bindBuffer(target, null)`。在不需要频繁更新的情况下，可以解绑缓冲区对象以减少CPU到GPU的数据传输。
+
+**简化理解**: `链接程序 -> 设置状态机 -> 绘制 -> 解绑`
 
 ## regl 简化样板代码
 
