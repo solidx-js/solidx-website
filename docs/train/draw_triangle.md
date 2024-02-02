@@ -112,7 +112,7 @@
 
 当需要解绑时，可以使用 `gl.bindBuffer(target, null)`。
 
-### 指定缓冲区数据的用途
+### gl.bufferData()
 
 在 WebGL 中，我们可以使用 `gl.bufferData()` 函数向缓冲区中写入数据。它有三个参数：
 
@@ -245,6 +245,14 @@ offset: 0
 1. 解绑缓冲区对象：`bindBuffer(target, null)`。在不需要频繁更新的情况下，可以解绑缓冲区对象以减少CPU到GPU的数据传输。
 
 **简化理解**: `链接使用程序 -> 设置状态机 -> 绘制 -> 解绑`
+
+:::warning
+
+WebGL 本质上是一个状态机。在调用 `bindBuffer(target, buffer)` 之后，后续所有和这个 target 相关的操作（例如 `bufferData()`、`vertexAttribPointer()` 等）都会作用在这个缓冲区对象上，直到绑定了另一个缓冲区对象或调用 `bindBuffer(target, null)` 为止。
+
+通常在给多个 attribute 变量连续赋值时，需要注意上述特性。
+
+:::
 
 ## regl 简化样板代码
 

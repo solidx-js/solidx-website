@@ -49,6 +49,8 @@ body {
   --ifm-code-border-radius: 0.2rem;
   --ifm-code-background: transparent;
   --ifm-font-family-monospace: Courier, 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+
+  --ifm-blockquote-color: var(--ifm-color-emphasis-400);
 }
 
 .social-pattern {
@@ -58,4 +60,13 @@ body {
 code {
   border: 1px solid rgba(100, 100, 100, 0.2);
   color: #d89614;
+}
+
+strong {
+  color: #ff4d4f
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 0.9em;
 }
